@@ -1,0 +1,189 @@
+.app {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.display-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.dropdown-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-section span {
+    margin-right: 20px;
+    color: black;
+}
+
+.dropdown-section select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.kanban-column {
+    
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.kanban-column h2 {
+    margin-top: 0;
+}
+
+.ticket-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-id {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.ticket-title {
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.more-icon {
+    font-size: 1.2em;
+    border: #ddd 1px solid;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.ticket-tag {
+    font-size: 0.85em;
+    border: #ddd 1px solid;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.display-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+}
+  .filter-icon {
+    width: 16px; 
+    height: 16px;
+  }
+.user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+.count-for-the-task {
+        display: flex; 
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+      }
+      
+.icon-small {
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+      }
+      .group-info {
+        display: flex;
+        align-items: center; 
+      }
+      
+      .group-name {
+        margin-right: 10px;
+      }
+      
+      .group-count {
+        margin-right: 30px;
+      }
+      
+      .count-for-the-task {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; 
+        margin-left: auto; 
+      }
+.small-icon {
+    border: #ddd 1px solid;
+    border-radius: 3px; 
+}
+      
+.small-icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+}
+
+      
