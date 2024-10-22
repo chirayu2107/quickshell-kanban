@@ -27,10 +27,11 @@ const KanbanBoard = ({ tickets, users, grouping, ordering }) => {
             </div>
           </div>
           <div className="ticket-list">
+            {/* Show ticket cards for all groups, including priority */}
             {groupedTickets[group]
               .sort((a, b) => sortTickets(a, b, ordering))
               .map((ticket) => (
-                <TicketCard key={ticket.id} ticket={ticket} users={users} />
+                <TicketCard key={ticket.id} ticket={ticket} />
               ))}
           </div>
         </div>
@@ -44,21 +45,18 @@ const renderGroupHeader = (group, grouping, groupedTickets) => {
 
   return (
     <>
-      {grouping === "priority" && renderPriorityHeader(group)}
+      {grouping === "priority" && (
+        <>
+          <img src={priorityMapping[group]?.icon} alt={priorityMapping[group]?.name} className="status-icon small-icon" />
+          <span className="group-name">{priorityMapping[group]?.name}</span>
+          <span className="group-count">{groupCount}</span>
+        </>
+      )}
       {grouping === "user" && renderUserHeader()}
       {grouping === "status" && renderStatusHeader(group)}
-      <span className="group-name">{group}</span>
-      <span className="group-count">{groupCount}</span>
     </>
   );
 };
-
-const renderPriorityHeader = (group) => (
-  <>
-    <img src={priorityMapping[group]?.icon} alt={priorityMapping[group]?.name} className="status-icon small-icon" />
-    <span className="group-name">{priorityMapping[group]?.name}</span>
-  </>
-);
 
 const renderUserHeader = () => (
   <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Avatar" className="user-icon small-icon" />
